@@ -17,6 +17,7 @@
         }
         
         table{
+            position: relative;
             width: 450px;
             border: 3px solid black;
             border-collapse: collapse;
@@ -26,10 +27,18 @@
             background-color: rgba(228, 247, 197, 0.829);
         }
 
-        th{
+        th, tfoot{
+            background-color: white;
             border: 3px solid black;
             font-size: 1.3em;
         }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1.5px;
+            background-color: white;
+        }
+
 
         tr, td{
             height: 20px;
@@ -48,10 +57,7 @@
             text-align: right;
         }
 
-        tfoot{
-            border: 3px solid black;
-            font-size: 1.1em;
-        }
+    
     </style>
 </head>
 <body>
